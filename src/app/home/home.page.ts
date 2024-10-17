@@ -31,7 +31,7 @@ export class HomePage implements OnInit{
 
   selectedPerson: any = null;
   isAnimating = false;
-  page:number = 0;
+  page:number = 1;
   pageSize:number = 25;
 
 

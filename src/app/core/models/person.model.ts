@@ -4,7 +4,9 @@ import { Model } from "./base.model";
 export interface Person extends Model{
     name:string,
     surname:string,
-    age:number,
+    age?:number,
+    gender?:string,
+    email?:string, //TODO: Quitar interrogación más adelante.
     picture?:{
         large:string,
         thumbnail:string
