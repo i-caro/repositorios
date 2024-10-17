@@ -4,6 +4,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { AnimationController, InfiniteScrollCustomEvent } from '@ionic/angular';
 import { Paginated } from '../core/models/paginated.model';
 import { Person } from '../core/models/person.model';
+import { MyPeopleService } from '../core/services/my-people.service';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,7 @@ export class HomePage implements OnInit{
 
   constructor(
     private animationCtrl: AnimationController,
-    private peopleSv:PeopleService
+    private peopleSv:MyPeopleService
   ) {}
 
   ngOnInit(): void {
